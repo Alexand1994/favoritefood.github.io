@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+	<meta name="keywords" content="Готовим, рецепты, здоровое питание, зож">
+	<meta name="author" content="Александр Александрович">
+	<meta name="description" content="Здоровое питание для всей семьи">
+	<!-- <meta http-equiv="refresh" content="120"> -->
+    <title>Лучшая еда</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logoMenu/tomato.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="logo_color">
+		<div class="post"> 
+	    <a href="index.html"> <img id="logo" src="images/logoMenu/logo4.jpg" alt="Тут изображение"> </a> 
+		</div>
+
+		<div class="page">
+    		<ul id="menu_nav">
+				<li><a class="first" href="index.html">Главная</a></li>
+				<li><a class="first_center" href="categories.html">Категории</a>
+		    		<ul class="clik_nav">
+						<li><a href="categories.html#one">Первые блюда</a></li>
+						<li><a href="categories.html#two">Вторые блюда</a></li>
+						<li><a href="categories.html#three">Салаты</a></li>
+						<li><a href="categories.html#four">Десерты</a></li>
+					</ul>
+				</li>
+				<li><a class="first_center" href="news.html">Новости</a>
+		    		<ul class="clik_nav">
+						<li><a href="news.html">Новости кулинарии</a></li>
+						<li><a href="menu7.html">Меню на неделю</a></li>
+						
+					</ul>
+				</li>
+        		<li><a class="first_center" href="otzv.html">Отзывы</a></li>
+        		<li><a class="first_center" href="kont.html">Контакты</a></li>
+			</ul>
+		</div>  
+	</div>
+
+	
+	<div  class="poster">
+		<img  id="idposter" src="images/poster/Social.jpg" alt='тут картинка'>
+	</div>
+    
+<div class="adres">
+		<h1 id="kont_tit">Контакты</h1><br>
+		<p class="zag"> Cоциальные сети</p><br>
+		<div class="social">
+			<a  href="https://www.facebook.com" class="moscow"> <img src="images/social/01.png" alt="*"> </a>
+			<a  href="https://www.viber.com" class="moscow"><img src="images/social/02.png" alt="*"></a>
+			<a  href="https://twitter.com" class="moscow"><img src="images/social/03.png" alt="*"></a>
+			<a  href="https://www.instagram.com/anastasia___sergeevna__/" class="moscow"><img src="images/social/04.png" alt="*"></a>
+			<a  href="https://vk.com/id515456602" class="moscow"><img src="images/social/05.png" alt="*"></a>
+		</div> <br>
+		<p class="zag" >Адрес электронной почты</p><br>
+		<p class="moscow">E-mail: <a href="mailto:v.barmen@bk.ru">v.barmen@bk.ru</a> </p>
+		<p id="service">Вопросы, отзывы и предложения по улучшению блюд присылайте на почту.</p>
+	</div>
+<!-- 	<img   id="perec_kont"  src="images/perets81.png" alt="*"> -->
+
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		$(function() {			
+			$('#menu_nav li').find('.clik_nav').hide();
+			$('#menu_nav li').hover(function() {			
+				$(this).find('.clik_nav').fadeIn(400);
+			}, function() {			
+				$(this).find('.clik_nav').fadeOut(100);
+			});
+		});
+		</script>
+</body>
+</html>
+
+

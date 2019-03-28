@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+	<meta name="keywords" content="Готовим, рецепты, здоровое питание, зож">
+	<meta name="author" content="Александр Александрович">
+	<meta name="description" content="Здоровое питание для всей семьи">
+<!-- 	<meta http-equiv="refresh" content="120"> -->
+    <title>Лучшая еда</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="images/logoMenu/tomato.png" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lobster" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="logo_color">
+		<div class="post"> 
+	    <a href="index.html"> <img id="logo" src="images/logoMenu/logo4.jpg" alt="Тут изображение"> </a> 
+		</div>
+
+		<div class="page">
+    		<ul id="menu_nav">
+				<li><a class="first" href="index.html">Главная</a></li>
+				<li><a class="first_center" href="categories.html">Категории</a>
+		    		<ul class="clik_nav">
+						<li><a href="categories.html#one">Первые блюда</a></li>
+						<li><a href="categories.html#two">Вторые блюда</a></li>
+						<li><a href="categories.html#three">Салаты</a></li>
+						<li><a href="categories.html#four">Десерты</a></li>
+					</ul>
+				</li>
+				<li><a class="first_center" href="news.html">Новости</a>
+		    		<ul class="clik_nav">
+						<li><a href="news.html">Новости кулинарии</a></li>
+						<li><a href="menu7.html">Меню на неделю</a></li>
+						
+					</ul>
+				</li>
+        		<li><a class="first_center" href="otzv.html">Отзывы</a></li>
+        		<li><a class="first_center" href="kont.html">Контакты</a></li>
+			</ul>
+		</div>  
+	</div>
+	
+	<div  class="poster">
+		<img  id="idposter" src="images/poster/word.jpg" alt='тут картинка'>
+	</div>
+	<h1>Отзывы посетителей сайта</h1>
+	<table>
+		<tr>
+			<td ><img class="comment" src="images/people/people1.jpg" alt="*"> 
+				<p class="pipl">
+				Время при приготовление блюд, пролетает не заметно, большинство блюд, очень простые  интересные рецепты и легкие в приготовлении! На днях удивляла свою семью вкусным десертом, так что заходите ,наслаждайтесь и удивляйте своих родных шедеврами кулинарии! <br>
+
+				  <span>Валерия.</span>
+				</p>
+			</td>
+			<td><img  class="comment" src="images/people/people2.jpg" alt="*">
+				<p class="pipl">
+					Я очень давно искала сайты с интересными рецептами и нашла! Мы очень часто любим приглашать гостей в дом, и каждый раз пытаемся их чем-то удивить, а точнее новыми вкусными блюдами, но, скажем так, бывают творческие кризисы, и проблемы с фантазией и как то захотела приготовить салат! <!-- А у вас очень простые и интересные рецепты!   -->
+				<!--  <p id="dobavka">вкуснымаютпроблемы5555555555фантазией.и</p> -->
+				<span>Людмила.</span>
+
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td><img  class="comment" src="images/people/people3.jpg" alt="*"> 
+			<p class="pipl">
+			 Я недавно попала на ваш сайт, когда искала рецепт выпечки. Сайт видно молодой, но довольно доступный и простой в рецептах, нет долгих предисловий. Что мне в нем нравится, так это то что рецепты с пошаговыми фотами. <span>Мария.</span>
+			</p>
+			</td>
+			<td><img class="comment" src="images/people/people4.jpg" alt="*"> 
+				<p class="pipl">
+				Красивый сайт и с хорошим контентом. Рецептов маловато, но нету заумных рецептов таких как блюда от шеф повара цесарки под винным соусом. Моя жена предпочитает этот сайт, а я там выбираю что она будет готовить. <span>Евгений.</span>
+				</p>
+			</td>
+		</tr>
+	</table>	
+
+	
+	<img   id="perec" src="images/perets81.png" alt="*">
+
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		$(function() {			
+			$('#menu_nav li').find('.clik_nav').hide();
+			$('#menu_nav li').hover(function() {			
+				$(this).find('.clik_nav').fadeIn(400);
+			}, function() {			
+				$(this).find('.clik_nav').fadeOut(100);
+			});
+		});
+		</script>
+</body>
+</html>
